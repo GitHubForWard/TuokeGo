@@ -1,0 +1,11 @@
+<!--components/indexFloor/indexFloor.wxml-->
+<view class="floor_container" wx:for="{{ floorList }}" wx:key="floor_title">
+  <view class="floor_title">
+    <image src="{{ item.floor_title.image_src }}" mode="widthFix" />
+  </view>
+  <view class="floor_content">
+    <navigator wx:for="{{ item.product_list }}" wx:for-item="content" wx:for-index="idx" wx:key="name" class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        <image src="{{ content.image_src }}" mode="scaleToFill" />
+    </navigator>
+  </view>
+</view>

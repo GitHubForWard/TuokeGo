@@ -1,13 +1,11 @@
 /* components/indexNav/indexNav.wxss */
 .index_nav {
   display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
 }
 .index_nav navigator {
-  width: 185rpx;
-  text-align: center;
+  flex: 1;
+  padding: 20rpx;
 }
 .index_nav navigator image {
-  width: 80%;
+  width: 100%;
 }

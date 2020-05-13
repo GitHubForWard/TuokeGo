@@ -1,0 +1,31 @@
+/* components/indexFloor/indexFloor.wxss */
+.floor_container .floor_title {
+  padding: 10rpx 0;
+}
+.floor_container .floor_content {
+  overflow: hidden;
+}
+.floor_container .floor_content navigator {
+  width: 250rpx;
+  float: left;
+  height: 415.94827586rpx;
+}
+.floor_container .floor_content navigator:first-child {
+  border-left: 10rpx solid #fff;
+}
+.floor_container .floor_content navigator:nth-last-child(-n + 4) {
+  height: 207.97413793rpx;
+  border-left: 10rpx solid #fff;
+}
+.floor_container .floor_content navigator:nth-child(2),
+.floor_container .floor_content navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.floor_container .floor_content navigator:nth-child(3),
+.floor_container .floor_content navigator:last-child {
+  border-right: 10rpx solid #fff;
+}
+.floor_container .floor_content navigator image {
+  width: 100%;
+  height: 100%;
+}

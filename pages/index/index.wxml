@@ -8,4 +8,7 @@
   <!-- 导航开始 -->
   <indexNav navList="{{ navList }}" />
   <!-- 导航结束 -->
+  <!-- 楼层开始 -->
+  <indexFloor floorList="{{ floorList }}" />
+  <!-- 楼层结束 -->
 </view>
