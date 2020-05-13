@@ -5,4 +5,7 @@
   <!-- 轮播图开始 -->
   <MySwiper swiperList="{{ swiperList }}" />
   <!-- 轮播图结束 -->
+  <!-- 导航开始 -->
+  <indexNav navList="{{ navList }}" />
+  <!-- 导航结束 -->
 </view>

@@ -1,0 +1,7 @@
+<!--components/indexNav/indexNav.wxml-->
+<view class="index_nav">
+    <navigator wx:for="{{ navList }}" wx:key="name">
+        <image src="{{ item.image_src }}" mode="widthFix" />
+    </navigator>
+</view>
+  

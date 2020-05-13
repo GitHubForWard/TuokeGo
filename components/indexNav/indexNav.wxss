@@ -1,0 +1,13 @@
+/* components/indexNav/indexNav.wxss */
+.index_nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.index_nav navigator {
+  width: 185rpx;
+  text-align: center;
+}
+.index_nav navigator image {
+  width: 80%;
+}
