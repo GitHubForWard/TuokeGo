@@ -3,12 +3,6 @@
   <SearchInput />
   <!-- 搜索框结束 -->
   <!-- 轮播图开始 -->
-  <swiper>
-    <swiper-item wx:for="{{ swiperList }}" wx:key="goods_id">
-      <navigator>
-        <image src="{{ item.image_src }}" />
-      </navigator>
-    </swiper-item>
-  </swiper>
+  <MySwiper swiperList="{{ swiperList }}" />
   <!-- 轮播图结束 -->
 </view>

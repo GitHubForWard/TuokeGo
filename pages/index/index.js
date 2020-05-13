@@ -1,21 +1,21 @@
-//index.js
-//获取应用实例
-const app = getApp();
+import { request } from "./../../request/index.js";
 
 Page({
   data: {
     // 轮播图数组
     swiperList: [],
   },
-  onLoad: function () {
-    wx.request({
+  // 查询轮播图
+  querySwiperList: function () {
+    request({
       url: "https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata",
-      success: (result) => {
-        console.log("轮播图", result);
-        this.setData({
-          swiperList: result.data.message
-        })
-      },
+    }).then((result) => {
+      this.setData({
+        swiperList: result.data.message,
+      });
     });
+  },
+  onLoad: function () {
+    this.querySwiperList();
   },
 });
