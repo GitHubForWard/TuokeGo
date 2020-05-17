@@ -19,15 +19,13 @@
     "navigationBarBackgroundColor": "#eb4450",
     "navigationBarTitleText": "TuokeGo",
     "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true,
-    "backgroundColor": "orange"
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#999",
     "selectedColor": "#ff2d4a",
     "backgroundColor": "#fafafa",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "icons/home.png",

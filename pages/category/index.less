@@ -1,0 +1,69 @@
+/* pages/category/index.wxss */
+.cat_container {
+    height: calc(100vh - 90rpx);
+    display: flex;
+
+    .left_menu {
+        flex: 2;
+
+        scroll-view {
+            height: 100%;
+
+            .menu_item {
+                height: 80rpx;
+                line-height: 80rpx;
+                text-align: center;
+            }
+
+            .active {
+                color: var(--themeColor);
+                border-left: 5rpx solid currentColor;
+            }
+        }
+    }
+
+    .right_content {
+        flex: 5;
+
+        scroll-view {
+            height: 100%;
+        }
+
+        .goods_group {
+            .goods_title {
+                height: 80rpx;
+                line-height: 80rpx;
+                text-align: center;
+
+                &::before {
+                    content: "/";
+                    color: #ccc;
+                }
+
+                &::after {
+                    content: "/";
+                    color: #ccc;
+                }
+            }
+
+            .goods_list {
+                display: flex;
+                flex-wrap: wrap;
+
+                navigator {
+                    width: 33.33%;
+                    padding: 15rpx;
+                    text-align: center;
+
+                    image {
+                        width: 50%;
+                    }
+
+                    view {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
