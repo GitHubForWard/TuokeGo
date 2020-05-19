@@ -9,7 +9,7 @@
     </scroll-view>
   </view>
   <view class="right_content">
-    <scroll-view scroll-y>
+    <scroll-view scroll-y scroll-top="{{scrollTop}}">
       <view class="goods_group" scroll-y wx:for="{{ rightContent }}" wx:key="index">
         <view class="goods_title">
           {{ item.cat_name }}

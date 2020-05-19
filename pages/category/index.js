@@ -12,7 +12,8 @@ Page({
     leftMenuList: [],
     rightContent: [],
     // 被点击的左侧菜单
-    currentIndex: 0
+    currentIndex: 0,
+    scrollTop: 0
   },
 
   cateList: [],
@@ -20,11 +21,14 @@ Page({
   // 查询分类数据
   queryCateList() {
     request({
-      url: "https://api-hmugo-web.itheima.net/api/public/v1/categories"
+      url: "categories"
     }).then(result => {
       console.log("分类数据", result);
       this.cateList = result.data.message;
-      wx.setStorageSync('cates', { time: Date.now(), data: this.cateList });
+      wx.setStorageSync('cates', {
+        time: Date.now(),
+        data: this.cateList
+      });
       this.setData({
         leftMenuList: this.cateList.map(v => v.cat_name),
         rightContent: this.cateList[0].children
@@ -37,9 +41,10 @@ Page({
     const {
       index
     } = e.currentTarget.dataset;
-    console.log(index);
     this.setData({
-      currentIndex: index
+      scrollTop: 0,
+      currentIndex: index,
+      rightContent: this.cateList[index].children
     })
   },
 

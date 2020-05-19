@@ -23,6 +23,7 @@
 }
 .cat_container .right_content scroll-view {
   height: 100%;
+  background-color: orange;
 }
 .cat_container .right_content .goods_group .goods_title {
   height: 80rpx;

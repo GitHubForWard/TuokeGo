@@ -12,7 +12,7 @@ Page({
   // 查询轮播图
   querySwiperList() {
     request({
-      url: "https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata",
+      url: "home/swiperdata",
     }).then((result) => {
       this.setData({
         swiperList: result.data.message,
@@ -22,7 +22,7 @@ Page({
   // 查询导航
   queryNavList() {
     request({
-      url: "https://api-hmugo-web.itheima.net/api/public/v1/home/catitems",
+      url: "home/catitems",
     }).then((result) => {
       console.log('导航数据', result);
       this.setData({
@@ -33,7 +33,7 @@ Page({
   // 获取楼层数据
   queryFloorList() {
     request({
-      url: "https://api-hmugo-web.itheima.net/api/public/v1/home/floordata",
+      url: "home/floordata",
     }).then((result) => {
       console.log('楼层数据', result);
       this.setData({
